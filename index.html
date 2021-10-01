@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Amatuer photographer based in Glasgow">
+		<title>Dannielle Anderson Photography</title>
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet"> 
+		<link href="css/styles.css?v=1.2" rel="stylesheet">
+		<link href="css/queries.css?v=1.2" rel="stylesheet">
+		<link rel="stylesheet" href="css/flexslider.css?v=1.2" type="text/css">
+		<link rel="stylesheet" href="css/animate.css" type="text/css">
+		<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        	
+        <!-- Favicon -->
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+        
+        <script src="js/app.js"></script>
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+        
+<script>
+     $("#contactForm").submit(function(event) 
+     {
+         /* stop form from submitting normally */
+         event.preventDefault();
+
+         /* get some values from elements on the page: */
+         var $form = $( this ),
+             $submit = $form.find( 'button[type="submit"]' ),
+             name_value = $form.find( 'input[name="name"]' ).val(),
+             email_value = $form.find( 'input[name="email"]' ).val(),
+             message_value = $form.find( 'textarea[name="message"]' ).val(),
+             url = $form.attr('action');
+
+         /* Send the data using post */
+         var posting = $.post( url, { 
+                           name: name_value, 
+                           email: email_value, 
+                           message: message_value 
+                       });
+
+         posting.done(function( data )
+         {
+             /* Put the results in a div */
+             $( "#contactResponse" ).html(data);
+
+             /* Change the button text. */
+             $submit.text('Sent, Thank you');
+
+             /* Disable the button. */
+             $submit.attr("disabled", true);
+         });
+    });
+</script>        
+	</head>
+	<body>
+
+		<header>
+	
+			<div class="container">
+				<div class="row">
+					<div class="responsive-logo"></div>
+					<div class="pullcontainer">
+						<a href="#" id="pull"><i class="fa fa-bars fa-2x"></i></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<nav>
+							<div class="logo-holder"></div>
+							<ul class="clearfix">
+								<li><a href="#work">PORTFOLIO</a></li>
+								<li><a href="#shop" class="r_spacer">ABOUT</a></li>
+                              
+								<li><a href="#contact">CONTACT</a></li>
+							
+								<li><a href="">BLOG</a></li>
+							</ul>
+						</nav>
+		
+                    </div>
+                    
+				</div>
+		
+		</header>
+            <div class="content-block" id="header">
+            <div id="overlay-1">
+                
+                <div class="middle text-center clearfix">
+                    <div class="container">
+<section class="center">
+					<div class="slogan">
+						D - A &nbsp; PHOTOGRAPHY
+					</div>
+					<div class="secondary-slogan">
+						Professional photographer based in Glasgow
+					</div>
+
+				</section>
+                        
+                    </div>  <!-- container -->
+                </div>  <!-- middle -->
+                    <br></br>
+                     <br></br>
+                 <br></br>
+                                       <br></br>
+                     <br></br>
+                 <br></br>
+                <div class="bottom text-center">
+                    <a href="#work"><i class="fa fa-angle-down fa-3x pulse"></i></a>
+                </div>
+            </div>  <!-- overlay-1 -->
+        </div>  <!-- content-block -->
+
+		</header>
+                    <div id="work">
+		<section class="discover">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<a  class="shop-btn">My Work</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		</div>
+                    
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 section-1 nopadding">
+                    </div>
+				
+   				<div class="col-md-4 section-6">
+					<div class="wp5">
+					</div>
+				</div>
+			</div>
+            
+			<div class="row">
+				<div class="col-md-4 section-5">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-8 section-2 nopadding">
+				</div>
+			</div>
+		</div>
+                    
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 section-3">
+				</div>
+					<div class="col-md-4 section-7">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-4 section-4"></div>
+			</div>
+		</div>
+<div id ="showmore">
+<h3><p id="show_more1" onclick="showml('content1','show_more1')" onmouseover="this.style.cursor='pointer'">SHOW MORE</p></h3>
+</div>
+ <div id="content1" style="display: none;  ">
+     
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-8 section-9 nopadding">
+                    </div>
+				
+   				<div class="col-md-4 section-13">
+					<div class="wp5">
+					</div>
+				</div>
+			</div>
+            
+			<div class="row">
+				<div class="col-md-4 section-12">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-8 section-8 nopadding">
+				</div>
+			</div>
+		</div>
+                    
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 section-10">
+				</div>
+					<div class="col-md-4 section-11">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-4 section-14"></div>
+                <div class="row">
+				<div class="col-md-4 section-15">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-8 section-16 nopadding">
+				</div>
+			</div>
+		</div>
+                    
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4 section-17">
+				</div>
+					<div class="col-md-4 section-18">
+					<div class="wp5">
+					</div>
+				</div>
+				<div class="col-md-4 section-19"></div>
+			</div>
+			</div>
+            
+		</div>
+
+ </div>
+
+
+ <div id="shop">
+				<section class="discover">
+			
+                    <div class="container-fluid">
+				
+                <div class="row">
+                    
+					<div class="col-md-4 col-md-offset-4">
+						<a  class="shop-btn">About Me</a>
+					</div>
+				</div>
+                </div>
+		</section>
+         <section id= "testimonial">
+            <div class="testimonial-wrapper">
+                <div class= "container">
+                    <div class= "row">
+
+                        <div class= "col-md-6 col-md-offset-3">
+
+                                <div class="item">
+                                    <div class= "row">
+                                        <div class= "col-md-4">
+                                            <img class="img-responsive center-block" src="img/aboutmeprofile.png">
+                                            <div class="client-description text-center">
+                                                <p class="client-name">Dannielle Anderson</p>
+                                                <b><p class="client-title">Photographer</p></b>
+                                            </div>
+                                        </div>  
+                                        <div class= "col-md-8">
+                                            <p class= "client-comment text-center">
+                                               I am a professional photographer from the UK with several years of shooting experience. I specialise in Editorial Fashion, Portraiture, Social Events and Architectural images,working extensively with a different variety of clients.
+For the past four years I have studied photography and developed a strong portfolio using a number of different techniques and skills.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </section>  <!--  / #testimonial -->  
+	<div class="content-block" id="contact">
+		<section class="discover">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<a  class="shop-btn">Contact Me</a>
+					</div>
+				</div>
+			</div>
+		</section>
+                    <br></br>
+
+				<div class="container text-center">
+
+
+    
+<div id="contactResponse"></div>                  
+<form action="contactthanks.php" method="post">
+      <div class="field">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="field">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="field">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+    </div>
+
+    <div class="field">
+        <button type="submit">Send</button>
+    </div>
+</form>
+                      <br></br>
+				</div>
+			</div><!-- #contact -->
+                    
+                    
+		<footer id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 footer-leftcol">
+				</div>
+					<div class="col-md-4 footer-midcol">
+                        
+                <ul class="social-buttons">
+                  <li><a target="_blank" href="https://twitter.com/nowimdannie" class="social-btn"><i class="fa fa-twitter x"></i></a></li><!-- twitter -->
+                  <li><a target="_blank" href="https://www.facebook.com/dannielle.anderson.12?fref=ts" class="social-btn"><i class="fa fa-facebook"></i></a></li><!-- facebook -->
+                </ul>
+                        <br></br>
+                     <br></br>
+
+                      <div class="col-lg-12">
+                    <p>Copyright &copy; Dannielle Anderson</p>
+                          <p>Designed & Developed by <a target="_blank" href="http://www.colinbret.com">Colin Bret</a></p>
+                </div>
+              </div>
+            </div>
+
+
+                              
+				</div>
+			</div>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins)-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/waypoints.min.js"></script>
+	</body>
+</html>
