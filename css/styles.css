@@ -556,6 +556,9 @@ label {
   }
 }
 
+@media (max-width: 640px){
+    #nav > ul > li {width: 100%; clear: both;}
+}
 @media (max-width: 767px) {
   .element-item {
     width: 50%;
